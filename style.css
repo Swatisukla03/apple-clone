@@ -17,7 +17,7 @@ a{
 .container{
     max-width:98rem ;
     margin: 0 auto;
-    padding:  0 2 .2rem;
+    padding:  0 2.2rem;
 }
 *{
     display: block;
@@ -36,8 +36,8 @@ header{
     list-style: none;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin: 0 -1rem;
+    justify-content: space-around;
+    /* margin: 0 -1rem; */
 }
 .nav-list-mobile{
     display: none;
@@ -68,6 +68,7 @@ header{
     height: 4.4rem;
 }
 .iphone-11-pro{
+    height: 69.2rem;
     background:url("images/hero/iphone-11-pro/iphone_11_pro_large.jpg");
     /* margin-top:4.4rem; */
 }
@@ -79,7 +80,7 @@ header{
     border-top: 0.6rem solid #fff;
     border-bottom: 0.3rem solid #fff;
 }
-.phone-11-pro{
+.iphone-11-pro{
     border-top: none;
 }
 .title{
@@ -167,7 +168,7 @@ header{
 }
  /* responsive site */
 @media screen and (max-width:1068px){
-    .phone-11-pro{
+    .iphone-11-pro{
         background: url("images/hero/iphone-11-pro/iphone_11_pro_medium.jpg") center no-repeat;
     }
     .iphone-11{
@@ -184,6 +185,9 @@ header{
 
     }
     .title-heading{
+        font-size: 4.4rem;
+    }
+    .title-sub-heading{
         font-size: 2.4rem;
     }
     .cta-link:nth-child(2)
@@ -203,7 +207,7 @@ header{
 {
     header{
         height: 4.8rem;
-        transition: background 0.36s cubic-bezier(0.32,0.08,0.24,1),
+        transition: background .36s cubic-bezier(0.32,0.08,0.24,1),
                      height 0.56s cubic-bezier(0.32,0.08,0.24,1) ;
     }
     header.conatiner{
@@ -328,7 +332,7 @@ header{
     .active.nav-list-larger .nav-item{
         animation: fade 1s ease-in;
     }
-    @keyframes fade{
+    @keyframes fadeIn{
         from{
             opacity: 0;
         }
@@ -341,12 +345,12 @@ header{
             background: url("images/hero/iphone-11-pro/iphone_11_pro_small.jpg");
         }
         .iphone-11{
-            background: url("images/hero/iphone-11/iphone_11_small.jpg");
+            background: url("images\hero\iphone-11\iphone_11_small.jpg");
         }
         .watch{
             background: url("images/hero/watch/watch_small.jpg") ;
         }
-        .her{
+        .hero{
             height: 50rem;
             background-size: auto 54.8rem;
             background-position: bottom center;
